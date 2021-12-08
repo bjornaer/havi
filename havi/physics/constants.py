@@ -1,6 +1,7 @@
 import numpy as np
 import torch
 
+
 def is_numpy(x):
     if type(x).__module__ == "numpy":
         return True

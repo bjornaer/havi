@@ -4,7 +4,9 @@
 import pyro
 from pyro.infer import MCMC, NUTS
 
-from havi.physics.model import ProbabilisticVariable, ScaterModel, Surface, Wave
+from havi.physics.model import (ProbabilisticVariable, ScaterModel, Surface,
+                                Wave)
+
 
 def get_model(epsilon: ProbabilisticVariable, rms_height: ProbabilisticVariable, correlation_longitude: ProbabilisticVariable, incident_wave: Wave, scatered_wave: Wave):
     def model(sigma):

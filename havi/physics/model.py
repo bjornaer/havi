@@ -2,7 +2,9 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Dict
 
-from havi.physics.constants import CONJUGATE, COS, EXP, LOG_10, PI, POW_2, REAL_PART, SIN, SQRT, ii
+from havi.physics.constants import (CONJUGATE, COS, EXP, LOG_10, PI, POW_2,
+                                    REAL_PART, SIN, SQRT, ii)
+
 
 class Unit(Enum):
     UNITLESS = ''
