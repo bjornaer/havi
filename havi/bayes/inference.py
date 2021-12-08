@@ -1,6 +1,3 @@
-# import numpy as np
-# from matplotlib import pyplot as plt
-# import torch
 import pyro
 from pyro.infer import MCMC, NUTS
 
@@ -31,5 +28,5 @@ mcmc = MCMC(
     NUTS_KERNEL,
     num_samples=2000,
     warmup_steps=300,
-    num_chains=1, # por alguna razon anda con 1 pero no con 4
+    num_chains=1,
 )

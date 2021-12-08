@@ -61,7 +61,17 @@ class Havi:
         )
         self._boudaries_set = True
 
-    def inference(self, sigma, observed) -> Union[dict, Any, None]:
+    def inference(self, sigma: Tensor, observed: Tensor) -> Union[dict, Any, None]:
+        """
+        Runs MCMC(Monte Carlo Markov Chain) bayesian inference with NUTS kernel over scatering model
+
+            Parameters:
+                sigma (Tensor): error margin for probabilistic model inference
+                observed (Tensor): Observed result from scatering measurement to condition bayesian model
+
+            Returns:
+                trace (Union[dict, Any, None]): Trace of the inference space of most likely values
+        """
         if not self._boudaries_set:
             raise Exception(
                 "boundaries for probabilistic variables not set! please call set_boundaries method"
@@ -83,7 +93,17 @@ class Havi:
         self.trace = trace
         return trace
 
+    # TODO allow parameter to print or save plots
     def plot(self):
+        """
+        Plots all of the traced values from MCMC bayesian inference
+
+            Parameters:
+                None
+
+            Returns:
+                None
+        """
         sns.set()
         trace = self.trace
         todos = np.stack((trace["epsilon"], trace["rms_height"], trace["corr_long"])).T

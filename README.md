@@ -26,7 +26,7 @@ import havi as h
 
 # scatering angles
 incident_angles = [theta, phi, psi] # incidence angles - floats
-scatered_angles = [theta,phi,psi] # scatering angles - floats
+scatered_angles = [theta, phi, psi] # scatering angles - floats
 wavelength = 0.5
 
 havi = h.Havi(incident_angles, scatered_angles, wavelength)
@@ -44,3 +44,28 @@ observed_data = h.Tensor([-12,-7,-8])
 trace = havi.inference(sigma, observed) # you can plot the trace however you want OR
 havi.plot()
 ```
+
+### API
+
+This package exports:
+
+A pytorch Tensor type
+
+    havi.Tensor
+
+Our inference model abstraction, holds data of incident wave, scatered wave and their wave length:
+        
+    havi.Havi(incident_angles: List[float], scatered_angles: List[float], wavelength: float)
+
+Set boundaries for probabilistic variables
+
+    Havi.set_boundaries(rms_height: Tuple[float], correlation_longitude: Tuple[float], dielectric_constant: Tuple[float]) -> None
+
+Runs MCMC(Monte Carlo Markov Chain) bayesian inference with NUTS kernel over scatering model
+
+    Havi.inference(sigma: Tensor, observed: Tensor) -> trace: dict
+
+Plots all of the traced values from MCMC bayesian inference
+
+    Havi.plot() -> None
+

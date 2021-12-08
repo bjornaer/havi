@@ -1,9 +1,10 @@
+# read the contents of your README file
+from pathlib import Path
+
 from setuptools import find_packages, setup
 
 from havi import __version__
 
-# read the contents of your README file
-from pathlib import Path
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
@@ -14,7 +15,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url="https://github.com/bjornaer/havi",
-    download_url="https://github.com/bjornaer/havi/archive/refs/tags/v.0.0.5-alpha.tar.gz",
+    download_url="https://github.com/bjornaer/havi/archive/refs/tags/v.0.0.6-alpha.tar.gz",
     author="Francisco Grings, Maximiliano Schulkin",
     author_email="max.schulkin@gmail.com",
     keywords = ['physics', 'scatering', 'bayesian', 'inference', 'data', 'science'],
