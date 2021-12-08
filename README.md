@@ -1,4 +1,5 @@
-# heimdallr
+# Havi
+[stands for Odin](https://en.wikipedia.org/wiki/H%C3%A1r_and_H%C3%A1rr)
 scatering model and bayesian inference
 
 ---
