@@ -13,7 +13,7 @@ setup(
     keywords = ['physics', 'scatering', 'bayesian', 'inference', 'data', 'science'],
     packages=find_packages(include=["havi"]),
     license="Apache2.0",
-    install_requires=["numpy", "torch", "pyro-ppl", "pyro-api"],
+    install_requires=["numpy", "torch", "pyro-ppl", "pyro-api", "pandas", "seaborn"],
     classifiers=[  # Optional
     # How mature is this project? Common values are
     #   3 - Alpha
