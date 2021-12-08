@@ -7,7 +7,7 @@ setup(
     version=__version__,
     description="perform bayesian inference over physical models",
     url="https://github.com/bjornaer/havi",
-    download_url="https://github.com/bjornaer/havi/archive/refs/tags/v.0.0.3-alpha.tar.gz",
+    download_url="https://github.com/bjornaer/havi/archive/refs/tags/v.0.0.4-alpha.tar.gz",
     author="Francisco Grings, Maximiliano Schulkin",
     author_email="max.schulkin@gmail.com",
     keywords = ['physics', 'scatering', 'bayesian', 'inference', 'data', 'science'],
@@ -22,11 +22,11 @@ setup(
     'Development Status :: 3 - Alpha',
 
     # Indicate who your project is intended for
-    'Intended Audience :: Scientific Community',
-    'Topic :: Data Analysis :: Bayesian Inference',
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Physics',
 
     # Pick your license as you wish
-    'License :: OSI Approved :: Apache 2 License',
+    'License :: OSI Approved :: Apache Software License',
 
     # Specify the Python versions you support here. In particular, ensure
     # that you indicate whether you support Python 2, Python 3 or both.
