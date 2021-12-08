@@ -1,5 +1,7 @@
 # Havi
 [stands for Odin](https://en.wikipedia.org/wiki/H%C3%A1r_and_H%C3%A1rr)
+
+
 scatering model and bayesian inference
 
 ---
@@ -15,7 +17,7 @@ If you use our library on a research or paper please give us a citation
 
 ### Installation
 
-    pip install sci-heimdall
+    pip install havi
 
 ### Usage
 
