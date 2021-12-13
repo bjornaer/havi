@@ -1,3 +1,4 @@
+[![Version](https://img.shields.io/pypi/v/havi)](https://pypi.org/project/havi)
 # Havi
 [stands for Odin](https://en.wikipedia.org/wiki/H%C3%A1r_and_H%C3%A1rr)
 
