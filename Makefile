@@ -8,5 +8,11 @@ install:
 lint: # for linting python files
 	pip install isort && isort . --atomic && pip install black && black **/*.py
 
+build:
+	pip install wheel && python setup.py bdist_wheel && python setup.py sdist && pip install twine
+
 release:
-	python setup.py sdist && pip install twine && twine upload dist/*
+	twine upload dist/*
+
+release-test:
+	twine upload --repository testpypi dist/*

@@ -16,12 +16,12 @@ setup(
     long_description_content_type='text/markdown',
     url="https://github.com/bjornaer/havi",
     download_url="https://github.com/bjornaer/havi/archive/refs/tags/v.0.0.6-alpha.tar.gz",
-    author="Francisco Grings, Maximiliano Schulkin",
+    author="Maximiliano Schulkin, IAFE",
     author_email="max.schulkin@gmail.com",
     keywords = ['physics', 'scatering', 'bayesian', 'inference', 'data', 'science'],
     packages=find_packages(include=["havi"]),
     license="Apache2.0",
-    install_requires=["numpy", "torch", "pyro-ppl", "pyro-api", "pandas", "seaborn"],
+    install_requires=["numpy", "torch", "pyro-ppl", "pandas", "seaborn"],
     classifiers=[  # Optional
     # How mature is this project? Common values are
     #   3 - Alpha
